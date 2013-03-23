@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% load wtforms %}
+
+{% block title %}Non-Profit Application - AlaskaHackathon Spring 2013{% endblock %}
+
+{% block breadcrumbs %}
+        <div class="breadcrumbs">
+            <ul class="pathway">
+                <li><a href="/">Home</a></li>
+                <li><a href="#nonprofits">Non-Profits</a></li>
+                <li>Work Request Application</li>
+            </ul>
+        </div><!-- .breadcrumbs -->
+{% endblock %}
+
+{% block main %}
+                        <div class="row">
+                            <div class="span_full module_cont module_feedback_form">
+
+                                <h2 class="headInModule"><a name="feedback"></a>Non-Profit Work Request Application</h2>
+
+                                {% if entered %}
+
+                                <p>You are now entered into our database!  You will be contacted during business hours within the next few days.</p>
+
+                                {% else %}
+
+                                <p>The Hackathon is meant to encourage programmers and developers to use government and non-profit data sets to improve the lives of the surrounding community by solving 
+a problem with software. The data set can be anything from the location of all the cities fire hydrants to a list of all the parks in the city with their acreage or hours of operation. Even if your 
+organization has little data but a good problem that can be solved by technical means, the Hackathon can help (for ideas for projects see <a href="http://codeforamerica.org/projects/">http://codeforamerica.org/projects/</a>). As a representative of a 
+non-profit or government organization wondering if you should put forth your data set/problem here are a few guidelines we have put together.</p>
+                                
+                                <p>The data set should be ready for public consumption by the Hackathon. This means it can either be public to start or whatever privacy concerns exist need to be 
+addressed by the weekend of the Hackathon (for example by sanitizing the data or otherwise changing it to protect confidentiality).</p>
+
+                                <p>The data set should be in some machine readable format. For example having it in a database or in excel are reasonable formats (pdf or otherwise human readable 
+formats are not acceptable).</p>
+
+                                <p>There must be a point of contact the weekend of the hackathon. This technical liaison (or liaisons) should be able to answer questions about the data or accessing 
+it.</p>
+
+                                <p>Preferably your organization should have ideas for a project to solve the problem, or at least just a problem.</p>
+
+                                <p>If you have a project in mind, it should be one that can be prototyped in a weekend.</p>
+
+                                <p>Applications are due on 3/29/2013. If your organization is selected then you will be asked to put together a 4 minute presentation on your data and project(or 
+possible ideas for a project) to the Hackathon participants. The presentations will be a week before the Hackathon, on 4/12/2013.</p>
+
+                                <p>If your organization is very excited about applying for inclusion into the Hackathon, but you have some questions about these guidelines or the Application below, 
+don’t hesitate to contact the Hackathon organizing committee via e-mail, <a href="mailto:AlaskaHackathon@gmail.com">AlaskaHackathon@gmail.com</a> or Geoff Wright via 907-727-9397.</p>
+
+                                <p>* indicates a required field.</p>
+
+                                <form name="application_form" method="post" action="" class="feedback_form">
+                                    {% csrf_token %}
+
+                                    <p><b>What is your group or organizations full name? *</b></p>
+                                    {% form_field application_form.organization_name class="field-name form_field" %}
+
+                                    <p><b>Are you a non-profit organization that is legally recognized in the state of Alaska?</b></p>
+                                    {% form_field application_form.organization_nonprofit class="field-select form_field" %}
+
+                                    <p><b>In what format is your data? *</b></p>
+                                    {% form_field application_form.data_format class="field-select form_field" %}
+                                    <p>If 'Other' please the format your data is in below.</p>
+                                    {% form_field application_form.data_format_other class="field-message form_field" %}
+
+                                    <p><b>What is the project coordinators full name? *</b></p>
+                                    {% form_field application_form.contact_full_name class="field-name form_field" %}
+
+                                    <p><b>What is their phone number? *</b></p>
+                                    {% form_field application_form.contact_phone_number class="field-name form_field" %}
+
+                                    <p><b>What is their e-mail address? *</b></p>
+                                    {% form_field application_form.contact_email_address class="field-name form_field" %}
+
+                                    <p><b>Any data provided will be released to the Hackathon participants who may use it to develop publicly available tools and services. Do you agree to take responsibility for removing sensitive and/or proprietary information before submitting it to the Hackathon? *</b></p>
+                                    {% form_field application_form.data_sensitive class="field-select form_field" %}
+
+                                    <p><b>If you answered no above, how will you make the data readable to Hackathon participants? *</b></p>
+                                    <p>(one example is if you have nondisclosure agreements for participants to sign)</p>
+                                    {% form_field application_form.data_access class="field-message form_field" %}
+
+                                    <p><b>Please describe the contents of the data as well as indicate if there is any written documentation on the meaning of the data(no more than 400 words). *</b></p>
+                                    {% form_field application_form.data_contents class="field-message form_field" %}
+
+                                    <p><b>How will participants access the data(usb stick, over the internet, etc)? *</b></p>
+                                    {% form_field application_form.data_media class="field-message form_field" %}
+
+                                    <p><b>Will you have a technical liaison on call or on site for the Hackathon? *</b></p>
+                                    {% form_field application_form.liaison_available class="field-select form_field" %}
+
+                                    <p><b>What is their full name? *</b></p>
+                                    {% form_field application_form.liaison_full_name class="field-name form_field" %}
+
+                                    <p><b>What is their phone number? *</b></p>
+                                    {% form_field application_form.liaison_phone_number class="field-name form_field" %}
+
+                                    <p><b>What is their e-mail address? *</b></p>
+                                    {% form_field application_form.liaison_email_address class="field-name form_field" %}
+
+                                    <p><b>What other ways do we have to contact them?</b></p>
+                                    {% form_field application_form.liaison_extra class="field-message form_field" %}
+
+                                    <p><b>Give a title and description for the project, or ideas for a project if you have them, that would use the data(no more than 400 words). *</b></p>
+                                    {% form_field application_form.project_description class="field-message form_field" %}
+
+                                    <p><b>Describe your organization in general terms(mission, size, areas or people served, etc) *</b></p>
+                                    {% form_field application_form.organization_description class="field-message form_field" %}
+
+                                    <input type="reset" name="reset" id="reset" value="Clear form" class="feedback_reset">
+                                    <input type="submit" name="submit" class="feedback_go" id="submit" value="Enter">
+
+                                </form>                                                        
+                                {% endif %}
+
+                            </div><!--.module_cont -->
+
+                            <div class="clear"><!-- ClearFIX --></div>
+                            
+                        </div><!-- .row -->
+{% endblock %}  

@@ -1,0 +1,110 @@
+/*MainColor: #dd4b28*/
+
+::selection {background:#dd4b28;}
+::-moz-selection {background:#dd4b28;}
+
+#commentform #submit:hover,
+.grid_img_wrapper .grid_overlay,
+.portfolio_wrapper,
+.ico_link:hover, .ico_zoom:hover,
+.widget_flickr .img_wrapper .img_fadder,
+ul.skills_list li div,
+.shortcode_button.btn_type1:hover,
+.price_item.most_popular .price_item_title,
+.shortcode_button.btn_type3:hover,
+.shortcode_button.btn_type4:hover,
+.shortcode_button.btn_type5,
+.masonry_blog .blog_item .featured_image_full .featured_image_wrapper,
+.featured_slider .works_hover,
+.comment_reset:hover,
+.landing_logo {
+	background:#dd4b28;
+}
+
+.module_iconboxes .iconbox_wrapper:hover .ico,
+.nivo-directionNav a:hover,
+.carouselslider .carousel-previous:hover,
+.carouselslider .carousel-next:hover,
+.shortcode_accordion_item_title:hover .ico, 
+.shortcode_toggles_item_title:hover .ico,
+.shortcode_iconbox:hover .ico,
+.feedback_form .feedback_go:hover,
+.price_item.most_popular .price_item_btn a:hover,
+.arrowButton .prevArrow:hover,
+.arrowButton .nextArrow:hover { 
+	background-color:#dd4b28;
+}
+
+a, a:visited,
+header nav ul.menu li.current-menu-item a,
+header nav ul li.current-menu-parent a,
+.filter_navigation ul li ul li a:hover,
+.filter_navigation ul li ul li.selected a,
+.widget_block_list li a:hover,
+.text_color, 
+.text_light a, 
+.text_color a:hover,
+.dropcap.colored,
+ul.list li:before,
+ol.list li:before,
+.price_item.most_popular .price_item_text a,
+.price_item.most_popular .price_item_cost h1,
+.price_item.most_popular .price_item_cost h1 span,
+.module_highlights li:hover,
+.twitter_list li a:hover,
+.widget_nav_menu ul li a:hover,
+.breadcrumbs .pathway li a:hover,
+.shortcode_accordion_item_title:hover, 
+.shortcode_toggles_item_title:hover,
+.carouselslider ul li .item:hover h5,
+.featured_slider .carousel_desc a:hover,
+.module_highlighter .highlighter_item a:hover,
+.feedback_form .field-name:focus,
+.feedback_form .field-email:focus,
+.feedback_form .field-subject:focus,
+.feedback_form .field-message:focus,
+#commentform .form_field:focus,
+.shortcode_tab_item_title:hover,
+.featured_slider .item:hover a,
+.columns1 .portfolio_dscr a {
+	color:#dd4b28;
+}
+
+header,
+header nav ul.sub-menu,
+.shortcode_tab_item_title:hover {
+	border-top-color:#dd4b28;
+}
+
+.widget_nav_menu ul li a:hover,
+.module_highlighter .highlighter_item a:hover,
+.feedback_form .field-name:focus,
+.feedback_form .field-email:focus,
+.feedback_form .field-subject:focus,
+.feedback_form .field-message:focus,
+#commentform .form_field:focus,
+ol.commentlist  li .stand_comment:hover {
+	border-left-color:#dd4b28;
+}
+header nav ul.sub-menu,
+.shortcode_button.btn_type1:hover,
+.shortcode_button.btn_type0,
+footer,
+blockquote .blockquote_wrapper {
+	border-color:#dd4b28;
+}
+
+hr.colored,
+.carouselslider ul li .item:hover,
+.columns2 .portfolio_dscr,
+.columns3 .portfolio_dscr,
+.columns4 .portfolio_dscr,
+.shortcode_button.btn_type3:hover,
+.shortcode_button.btn_type4:hover,
+.shortcode_button.btn_type5 {
+	border-color:#dd4b28!important;
+}
+
+.price_item.most_popular .price_item_wrapper {
+	border-bottom-color:#dd4b28!important;
+}

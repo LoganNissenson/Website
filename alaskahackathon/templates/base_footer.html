@@ -1,0 +1,389 @@
+{% load wtforms %}
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="ie ie9"> <!--<![endif]-->
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    
+    <!-- Mobile Specific Metas
+    +++++++++++++++++++++++++++ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="/media/site/img/favicon.ico">
+    <title>AlaskaHackathon Spring 2013</title>
+    
+    <!-- Styles
+    +++++++++++++ -->	
+    <link rel="stylesheet" type="text/css" href="/media/site/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/media/site/css/colors.css">        
+    <link rel="stylesheet" type="text/css" href="/media/site/css/base.css">
+    <!-- Fonts&Plugins -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300,600,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/media/site/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/media/site/css/prettyPhoto.css" />
+    <link rel="stylesheet" type="text/css" href="/media/site/css/tipsy.css" />
+    <link rel="stylesheet" type="text/css" href="/media/site/css/portfolio_isotope.css" />
+    <link rel="stylesheet" type="text/css" href="/media/site/css/nivo-slider.css">
+    <link rel="stylesheet" type="text/css" href="/media/site/css/jquery.onebyone.css">
+	<link rel="stylesheet" type="text/css" href="/media/site/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/media/site/css/base_responsive.css">
+
+    <!-- Scripts
+    +++++++++++++ -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.2/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/media/site/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/media/site/js/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="/media/site/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="/media/site/js/hoverIntent.js"></script>
+    <script type="text/javascript" src="/media/site/js/superfish.js"></script>
+    <script type="text/javascript" src="/media/site/js/jquery.form.js"></script>
+    <script type="text/javascript" src="/media/site/js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="/media/site/js/sorting.js"></script>
+    <script type='text/javascript' src='/media/site/js/jquery.nivo.slider.js'></script>
+    <script type="text/javascript" src="/media/site/js/jflickrfeed.js"></script>
+    <script type="text/javascript" src="/media/site/js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="/media/site/js/fakeElement.js"></script>
+    <script type="text/javascript" src="/media/site/js/jquery.carousel.min.js" ></script>
+    <script type="text/javascript" src="/media/site/js/jquery.touchwipe.min.js" ></script> 
+    <script type="text/javascript" src="/media/site/js/jquery.onebyone.min.js" ></script> 
+    <!-- Main Scrip Run -->
+    <script type="text/javascript" src="/media/site/js/script.js"></script>
+</head>
+
+<body>
+	<!-- H E A D E R -->
+	<header>
+    	<div class="head_line">
+        	<div class="headline_content">
+	        	<div class="top_slogan">Turning one and zeros into real world solutions for Alaska's non-profits</div>
+                <ul class="headline_socials main_socials">
+                    <li><a href="#" class="ico_social-facebook" title="Facebook"></a></li>
+                    <li><a href="#" class="ico_social-twitter" title="Twitter"></a></li>
+                </ul>
+            </div>
+      </div>
+        <div class="header_wrapper">
+            <a href="index.html" class="logo"><img src="/media/site/img/logo.png" alt=""  width="225" height="40" class="logo_def"><img src="/media/site/img/retina/logo.png" alt="" width="225" height="40" class="logo_retina"></a>
+            <nav>
+                <ul class="menu">
+                    <li class="current-menu-parent"><a href="/">Home</a></li>
+                    <li><a href="#who">Who</a>
+                        <ul class="sub-menu">
+                            <li><a href="#nonprofits">Non-Profit Organizations</a></li>
+                            <li><a href="#developers">Developers</a></li>
+                            <li><a href="#organizers">Hackathon Organizers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#what">What</a>
+                        <ul class="sub-menu">
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#prizes">Prizes</a></li>
+                        </ul>
+                    </li>                
+                    <li><a href="#when">When</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">April 12</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#"><b>5:30pm - 9:30pm</b></a></li>
+                                    <li><a href="#">Non-Profit Data Presentations</a></li>
+                                    <li><a href="#">Team Building</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">April 20</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#"><b>Doors open 8:00am</b></a></li>
+                                    <li><a href="#">Hackathon!</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">April 21</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#"><b>Doors open 8:00am</b></a></li>
+                                    <li><a href="#">Hackathon!</a></li>
+                                    <li><a href="#">Team Presentations</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#why">Why</a></li>                
+                    <li><a href="#where">Where</a></li>                
+                    <li><a href="#how">How</a></li>                
+                </ul><!-- .menu -->
+            </nav>
+            <nav class="mobile_header">
+                <select id="mobile_select"></select>
+            </nav>
+        </div>
+      <div class="clear"></div>
+	</header>
+    <!-- C O N T E N T -->
+    <div class="content_wrapper">
+    	<div class="content_block no-sidebar">
+            <div class="fl-container">
+                <div class="posts-block">
+                    <div class="contentarea">
+                        <div class="row">
+                        	<div class="span_full module_cont module_layer_slider hidden-small">
+                            	<div class="module_content fullscreen_slider">
+                                	<div id="banner1" class="OneByOne_container">                                                                                                            
+                                    	<div class="oneByOne_item">
+                                            <img src="/media/site/img/slider/intro/t1.png" class="ls1_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/intro/t2.png" class="ls1_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/intro/t3.png" class="ls1_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/intro/t4.png" class="ls1_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/intro/t5.png" class="ls1_txt1" data-animate="fadeIn">
+                                        </div>
+                                    	<div class="oneByOne_item">
+                                            <img src="/media/site/img/slider/cloud/t1.png" class="ls2_txt1" data-animate="fadeInRight">
+                                            <img src="/media/site/img/slider/cloud/t2.png" class="ls2_txt1" data-animate="fadeInLeft">
+                                            <img src="/media/site/img/slider/cloud/t6.png" class="ls2_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/cloud/t3.png" class="ls2_txt1" data-animate="fadeInRight">
+                                            <img src="/media/site/img/slider/cloud/t4.png" class="ls2_txt1" data-animate="fadeInLeft">
+                                            <img src="/media/site/img/slider/cloud/t7.png" class="ls2_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/cloud/t5.png" class="ls2_txt1" data-animate="fadeInRight">
+                                            <img src="/media/site/img/slider/cloud/t8.png" class="ls2_txt1" data-animate="fadeInUp">
+                                        </div>
+                                    </div>
+                                </div>
+								<script type="text/javascript">
+                                    $(window).load(function(){
+                                        $('#banner1').oneByOne({
+											className: 'oneByOne1',
+											easeType: 'fadeIn',
+											delay: 750,
+											responsive: true,
+											enableDrag: false,
+											width: $(window).width(),
+											height:525,
+											minWidth: 300,
+											slideShow: true,  
+											slideShowDelay: 9000
+										});  
+                                    });
+                                </script>                                                                
+                            </div>
+
+                            <div class="clear"><!-- ClearFIX --></div>
+
+                            <div class="span_full module_cont module_feedback_form">
+
+                                <h2 class="headInModule"><a name="feedback"></a>Stay Tuned!</h2>
+
+                                {% if subscribed %}
+
+                                You are now subscribed for updates!
+
+                                {% else %}
+
+                                We are adding features to this site!  Fill out the form below to get notified as features are released.
+
+                                <form name="subscriber_form" method="post" action="" class="feedback_form">
+                                    {% csrf_token %}
+
+                                    {% form_field subscriber_form.full_name title="Full Name*" class="field-name form_field" %}
+
+                                    {% form_field subscriber_form.email_address title="Email Address*" class="field-name form_field" %}
+
+                                    <input type="reset" name="reset" id="reset" value="Clear form" class="feedback_reset">
+                                    <input type="submit" name="submit" class="feedback_go" id="submit" value="Subscribe">
+
+                                </form>                                                        
+                                {% endif %}
+
+                            </div><!--.module_cont -->
+
+                            <div class="clear"><!-- ClearFIX --></div>
+
+                            <div class="span1-3 module_cont module_iconboxes">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">E</div>
+                                    <h5>Hacka<b>who</b>?</h5>
+                                    <p>Are you a non-profit looking to solve a data problem? Have a bunch of data, but not sure what to do with it?  This event is for you. <a href="nonprofits/application">Sign-up as a non-profit participant today!</a></p>
+                                    </br>
+                                    <p>Are you a code guru?  A database ninja, or just someone with a developed skill willing to lend a hand for the betterment of our community and its non-profits? Sign-up as a <a href="developers/application">Alaska Hackathon participant today!</a></p>
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="span1-3 module_cont module_iconboxes shortcode_iconbox">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">l</div>
+                                    <h5>Hacka<b>what</b>?</h5>
+                                    <p>Mounds of data, amazing insight locked away in disparate data, an answer looking for its problem, a problem looking for a solution.</p>
+                                    </br>
+                                    <p>Non-profit companies in the Anchorage and Matanuska-Susitna area are looking for ways to utilize their data in a different way!  Some may have a problem they are looking to solve, while others have large amounts of data, but want a way to utilize it.</p>
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="span1-3 module_cont module_iconboxes shortcode_iconbox">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">C</div>
+                                    <h5>Hacka<b>when</b>?</h5>
+                                    <p><b>March 29th</b></p>
+                                    <p>Non-Profit Applications Due</p>
+                                    </br>
+                                    <p><b>April 12th</b></p>
+                                    <p>Non-Profit Data Presentations</p>
+                                    </br>
+                                    <p><b>April 20th-21st</b></p>
+                                    <p>Alaska Hackathon</p>
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="clear"><!-- ClearFIX --></div>
+
+                            <div class="span1-3 module_cont module_iconboxes shortcode_iconbox">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">^</div>
+                                    <h5>Hacka<b>why</b>?</h5>
+                                    <p>Because we can...</p>
+                                    <p>Non-profits are an integral part of a great community and by helping them to succeed, we are helping our community succeed.  Many non-profts don't have the resources for a dedicated development team, but we have many talented developers willing to give their time to make our home a better place through better use of data.</p>
+                                    <p>Why the heck not...</p>
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="span1-3 module_cont module_iconboxes shortcode_iconbox">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">m</div>
+                                    <h5>Hacka<b>where</b>?</h5>
+                                    <p><b>Mountain View Service Center</b></p>
+                                    <p>161 Klevin St.</p>
+                                    <p>Anchorage, AK 99508</p>
+                                    </br>
+                                    <iframe width="100%" height="25%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=161+Klevin+Street,+Anchorage,+AK&amp;aq=0&amp;oq=161+Klev&amp;sll=61.108864,-149.440311&amp;sspn=1.020478,2.469177&amp;ie=UTF8&amp;hq=&amp;hnear=161+Klevin+St,+Anchorage,+Alaska+99508&amp;t=m&amp;z=14&amp;ll=61.223276,-149.803624&amp;output=embed"></iframe>
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="span1-3 module_cont module_iconboxes shortcode_iconbox">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">;</div>
+                                    <h5>Hacka<b>how!</b></h5>
+
+                                    <p>Start by putting your name in the hat!</p>
+
+                                    <p><a href="nonprofits/application">Click here to register a project as a non-profit.</a></p>
+
+                                    <p><a href="nonprofits/application">Click here to register as a developer.</a></p>
+
+                                    <p><a href="mailto:AlaskaHackathon@gmail.com">Email us</a> to get info about how to become involved as a mentor or volunteer for the hackathon.</p>
+
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="clear"><!-- ClearFIX --></div>
+                            
+                            <div class="span_full module_cont module_partners">
+                            	<h3 class="headInModule">Our Sponsors</h3>
+                                <div class="module_partners_wrapper" data-items="6">
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://anchoragelandtrust.org/" target="_new"><img src="/media/site/img/sponsors/aclt.png" alt="Anchorage Community Land Trust"></a></div>
+                                        </div>
+                                    </div>
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://www.aedcweb.com/" target="_new"><img src="/media/site/img/sponsors/aedc.png" alt="Anchorage Economic Development Corporation"></a></div>
+                                        </div>
+                                    </div>
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://www.resdat.com/" target="_new"><img src="/media/site/img/sponsors/rdi.png" alt="Resource Data, Inc"></a></div>
+                                        </div>
+                                    </div>
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://www.brutetech.com/" target="_new"><img src="/media/site/img/sponsors/brutetech.png" alt="Brute Technologies"></a></div>
+                                        </div>
+                                    </div>
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://www.arbys.com/" target="_new"><img src="/media/site/img/sponsors/arbys.png" alt="Arby's"></a></div>
+                                        </div>
+                                    </div>
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://www.odom.com/" target="_new"><img src="/media/site/img/sponsors/odom.png" alt="The Odom Corporation"></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"><!-- ClearFIX --></div>
+                                </div>
+							</div><!-- .module_cont -->
+                            <div class="clear"><!-- ClearFIX --></div>                            
+                        </div><!-- .row -->
+                	</div>
+                </div>
+                <div class="left-sidebar-block">
+                    <!-- Left Sidebar Text -->
+                </div><!-- .left-sidebar -->
+                <div class="clear"><!-- ClearFix --></div>
+            </div><!-- .fl-container -->
+            <div class="right-sidebar-block">
+                <aside class="sidebar">
+					//Sidebar Text
+                </aside>
+            </div><!-- .right-sidebar -->
+            <div class="clear"><!-- ClearFix --></div>
+        </div>
+    </div>
+    <div class="pre_footer">
+    	<aside id="footer_bar">
+        	<div class="row">
+            	<div class="span1-4">
+                    <div class="sidepanel widget_about">
+	                	<h4>About Us</h4>
+                        <p>Anchorage Hackathon is a sponsor run event to focus south central area developers on a few monumental tasks for one epic weekend!</p>
+                        <span class="signature">Shane R. Spencer, Brute Technologies</span>
+                    </div>
+                </div>
+                <div class="span1-4">
+                    <div class="sidepanel widget_twitter">
+                       	<h4>Latest Tweets</h4>
+                        <ul class="twitter_list tweet_1057"></ul>
+                        <!-- <script>
+                            $(document).ready(function(){
+                                $('.tweet_1057').tweet({
+                                  avatar_size: 0,
+                                  count: 2,
+                                  username: "#akhack",
+                                  template: "{text}"
+                                });
+                            });										
+                        </script> -->
+                    </div><!-- .widget_twitter -->
+                </div>
+                <div class="span1-4">
+                    <div class="sidepanel widget_recent_entries">
+                        <h4 class="sidebar_header">Flickr Photostream</h4>
+                        <div class="widget_flickr">
+                            <!-- <script src="http://www.flickr.com/badge_code_v2.gne?count=8&display=latest&size=s&layout=x&source=user&user=29789996@N000"></script> -->
+                        </div>
+                    </div><!-- .widget_recent_entries -->
+                </div>
+                <div class="span1-4">                	
+                	<div class="sidepanel widget_nav_menu">
+                    	<h4>Highlights</h4>
+                        <div class="menu-menu-container">
+                        	<ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+    	<div class="footer_wrapper">
+            <a href="/" class="logo"><img src="/media/site/img/logo_footer.png" alt="" class="logo2_def" width="225" height="40"><img src="/media/site/img/retina/logo_footer.png" alt="" class="logo2_retina" width="225" height="40"></a>
+            <div class="copyright">&copy; 2013 Shane R. Spencer. All Rights Reserved.</div>
+            <nav>
+                <ul class="menu">
+                    <li class="current-menu-item"><a href="/">Home</a></li>
+                    <li><a href="#who">Who</a></li>
+                    <li><a href="#what">What</a></li>
+                    <li><a href="#when">When</a></li>
+                    <li><a href="#why">Why</a></li>                
+                    <li><a href="#where">Where</a></li>
+                    <li><a href="#how">How</a></li>
+                </ul><!-- .menu -->
+            </nav>        
+        </div>
+	</footer>
+   	<img src="/media/site/img/my_preloader1.gif" id="preloader">
+</body>
+</html>

@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+
+{% load wtforms %}
+
+{% block main %}
+                        <div class="row">
+                        	<div class="span_full module_cont module_layer_slider hidden-small">
+                            	<div class="module_content fullscreen_slider">
+                                	<div id="banner1" class="OneByOne_container">                                                                                                            
+                                    	<div class="oneByOne_item">
+                                            <img src="/media/site/img/slider/intro/t1.jpg" data-alpha-src="/media/site/img/slider/intro/t1-mask.png" class="ls1_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/intro/t2.png" class="ls1_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/intro/t3.png" class="ls1_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/intro/t4.png" class="ls1_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/intro/t5.png" class="ls1_txt1" data-animate="fadeIn">
+                                        </div>
+                                    	<div class="oneByOne_item">
+                                            <img src="/media/site/img/slider/cloud/t1.png" class="ls2_txt1" data-animate="fadeInRight">
+                                            <img src="/media/site/img/slider/cloud/t2.png" class="ls2_txt1" data-animate="fadeInLeft">
+                                            <img src="/media/site/img/slider/cloud/t6.png" class="ls2_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/cloud/t3.png" class="ls2_txt1" data-animate="fadeInRight">
+                                            <img src="/media/site/img/slider/cloud/t4.png" class="ls2_txt1" data-animate="fadeInLeft">
+                                            <img src="/media/site/img/slider/cloud/t7.png" class="ls2_txt1" data-animate="fadeInUp">
+                                            <img src="/media/site/img/slider/cloud/t5.png" class="ls2_txt1" data-animate="fadeInRight">
+                                            <img src="/media/site/img/slider/cloud/t8.png" class="ls2_txt1" data-animate="fadeInUp">
+                                        </div>
+                                    </div>
+                                </div>
+								<script type="text/javascript">
+                                    $(window).load(function(){
+                                        $('#banner1').oneByOne({
+											className: 'oneByOne1',
+											easeType: 'fadeIn',
+											delay: 750,
+											responsive: true,
+											enableDrag: false,
+											width: $(window).width(),
+											height:525,
+											minWidth: 300,
+											slideShow: true,  
+											slideShowDelay: 9000
+										});  
+                                    });
+                                </script>                                                                
+                            </div>
+
+                            <div class="clear"><!-- ClearFIX --></div>
+
+                            <div class="span1-3 module_cont module_iconboxes">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">E</div>
+                                    <h5>Hacka<b>who</b>?</h5>
+                                    <p>Are you a non-profit looking to solve a data problem? Have a bunch of data, but not sure what to do with it?  This event is for you. <a href="nonprofits/application">Sign-up as a non-profit participant today!</a></p>
+                                    </br>
+                                    <p>Are you a code guru?  A database ninja, or just someone with a developed skill willing to lend a hand for the betterment of our community and its non-profits? Sign-up as a <a href="developers/registration">hackathon developer today!</a></p>
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="span1-3 module_cont module_iconboxes shortcode_iconbox">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">l</div>
+                                    <h5>Hacka<b>what</b>?</h5>
+                                    <p>Mounds of data, amazing insight locked away in disparate data, an answer looking for its problem, a problem looking for a solution.</p>
+                                    </br>
+                                    <p>Non-profit companies in the Anchorage and Matanuska-Susitna area are looking for ways to utilize their data in a different way!  Some may have a problem they are looking to solve, while others have large amounts of data, but want a way to utilize it.</p>
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="span1-3 module_cont module_iconboxes shortcode_iconbox">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">C</div>
+                                    <h5>Hacka<b>when</b>?</h5>
+                                    <p><b>March 29th</b></p>
+                                    <p>Non-Profit Applications Due</p>
+                                    </br>
+                                    <p><b>April 12th</b></p>
+                                    <p>Non-Profit Data Presentations</p>
+                                    </br>
+                                    <p><b>April 20th-21st</b></p>
+                                    <p>Alaska Hackathon</p>
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="clear"><!-- ClearFIX --></div>
+
+                            <div class="span1-3 module_cont module_iconboxes shortcode_iconbox">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">^</div>
+                                    <h5>Hacka<b>why</b>?</h5>
+                                    <p>Because we can...</p>
+                                    <p>Non-profits are an integral part of a great community and by helping them to succeed, we are helping our community succeed.  Many non-profts don't have the resources for a dedicated development team, but we have many talented developers willing to give their time to make our home a better place through better use of data.</p>
+                                    <p>Why the heck not...</p>
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="span1-3 module_cont module_iconboxes shortcode_iconbox">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">m</div>
+                                    <h5>Hacka<b>where</b>?</h5>
+                                    <p><b>Mountain View Service Center</b></p>
+                                    <p>161 Klevin St.</p>
+                                    <p>Anchorage, AK 99508</p>
+                                    </br>
+                                    <iframe width="100%" height="25%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=161+Klevin+Street,+Anchorage,+AK&amp;aq=0&amp;oq=161+Klev&amp;sll=61.108864,-149.440311&amp;sspn=1.020478,2.469177&amp;ie=UTF8&amp;hq=&amp;hnear=161+Klevin+St,+Anchorage,+Alaska+99508&amp;t=m&amp;z=14&amp;ll=61.223276,-149.803624&amp;output=embed"></iframe>
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="span1-3 module_cont module_iconboxes shortcode_iconbox">
+                            	<div class="shortcode_iconbox">
+                                    <div class="ico">;</div>
+                                    <h5>Hacka<b>how!</b></h5>
+
+                                    <p><b>Start by putting your name in the hat!</b></p>
+                                    </br>
+
+                                    <p><a href="nonprofits/application">Click here to register a project as a non-profit.</a></p>
+                                    </br>
+
+                                    <p><a href="developers/registration">Click here to register as a developer.</a></p>
+                                    </br>
+
+                                    <p><a href="mailto:AlaskaHackathon@gmail.com">Email us</a> to get info about how to become involved as a mentor or volunteer for the hackathon.</p>
+                                    </br>
+
+                                </div>
+                            </div><!--.module_cont -->
+                            <div class="clear"><!-- ClearFIX --></div>
+                            
+                            <div class="span_full module_cont module_feedback_form">
+
+                                <h2 class="headInModule"><a name="feedback"></a>Stay Tuned!</h2>
+
+                                {% if subscribed %}
+
+                                You are now subscribed for updates!
+
+                                {% else %}
+
+                                We are adding features to this site!  Fill out the form below to get notified as features are released.
+
+                                <form name="subscriber_form" method="post" action="" class="feedback_form">
+                                    {% csrf_token %}
+
+                                    {% form_field subscriber_form.full_name title="Full Name*" class="field-name form_field" %}
+
+                                    {% form_field subscriber_form.email_address title="Email Address*" class="field-name form_field" %}
+
+                                    <input type="reset" name="reset" id="reset" value="Clear form" class="feedback_reset">
+                                    <input type="submit" name="submit" class="feedback_go" id="submit" value="Subscribe">
+
+                                </form>                                                        
+                                {% endif %}
+
+                            </div><!--.module_cont -->
+
+                            <div class="clear"><!-- ClearFIX --></div>
+
+                            <div class="span_full module_cont module_partners">
+                            	<h3 class="headInModule">Our Sponsors</h3>
+                                <div class="module_partners_wrapper" data-items="6">
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://anchoragelandtrust.org/" target="_new"><img src="/media/site/img/sponsors/aclt.png" alt="Anchorage Community Land Trust"></a></div>
+                                        </div>
+                                    </div>
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://www.aedcweb.com/" target="_new"><img src="/media/site/img/sponsors/aedc.png" alt="Anchorage Economic Development Corporation"></a></div>
+                                        </div>
+                                    </div>
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://www.resdat.com/" target="_new"><img src="/media/site/img/sponsors/rdi.png" alt="Resource Data, Inc"></a></div>
+                                        </div>
+                                    </div>
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://www.brutetech.com/" target="_new"><img src="/media/site/img/sponsors/brutetech.png" alt="Brute Technologies"></a></div>
+                                        </div>
+                                    </div>
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://www.arbys.com/" target="_new"><img src="/media/site/img/sponsors/arbys.png" alt="Arby's"></a></div>
+                                        </div>
+                                    </div>
+                                	<div class="item">
+                                    	<div class="item_content">
+                                        	<div class="partners_opacity"><a href="http://www.odom.com/" target="_new"><img src="/media/site/img/sponsors/odom.png" alt="The Odom Corporation"></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"><!-- ClearFIX --></div>
+                                </div>
+							</div><!-- .module_cont -->
+                            <div class="clear"><!-- ClearFIX --></div>                            
+                        </div><!-- .row -->
+{% endblock %}

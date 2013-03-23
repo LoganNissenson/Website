@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% load wtforms %}
+
+{% block title %}Developer Registration - AlaskaHackathon Spring 2013{% endblock %}
+
+{% block breadcrumbs %}
+        <div class="breadcrumbs">
+            <ul class="pathway">
+                <li><a href="/">Home</a></li>
+                <li><a href="#developers">Developers</a></li>
+                <li>Registration</li>
+            </ul>
+        </div><!-- .breadcrumbs -->
+{% endblock %}
+
+{% block main %}
+                        <div class="row">
+                            <div class="span_full module_cont module_feedback_form">
+
+                                <h2 class="headInModule"><a name="feedback"></a>Developer Registration</h2>
+
+                                {% if registered %}
+
+                                <p>You are now registered into our database! You will be contacted over email for us to get to know you better.<p>
+                                <p>If you do not get contacted within 2-3 days please email <a href="mailto:AlaskaHackathon@gmail.com">AlaskaHackathon@gmail.com</a> to make sure you're one of the developers.</p>
+
+                                {% else %}
+
+                                <p>* indicates a required field.</p>
+
+                                <form name="registration_form" method="post" action="" class="feedback_form">
+                                    {% csrf_token %}
+
+                                    <p><b>What is your full name? *</b></p>
+                                    {% form_field registration_form.full_name class="field-name form_field" %}
+
+                                    <p><b>What is your phone number?</b></p>
+                                    {% form_field registration_form.phone_number class="field-name form_field" %}
+
+                                    <p><b>What is your email address?</b></p>
+                                    {% form_field registration_form.email_address class="field-name form_field" %}
+
+                                    <p><b>Can you describe a bit about your programming experience? *</b></p>
+                                    <p>You should talk about what languages, databases, web, and mobile frameworks you like to work with.</p>
+                                    {% form_field registration_form.bio class="field-message form_field" %}
+
+                                    <p><b>What experience level below best describes you?</b></p>
+                                    {% form_field registration_form.experience class="field-select form_field" %}
+
+                                    <input type="reset" name="reset" id="reset" value="Clear form" class="feedback_reset">
+                                    <input type="submit" name="submit" class="feedback_go" id="submit" value="Enter">
+
+                                </form>                                                        
+                                {% endif %}
+
+                            </div><!--.module_cont -->
+
+                            <div class="clear"><!-- ClearFIX --></div>
+                            
+                        </div><!-- .row -->
+{% endblock %}  
